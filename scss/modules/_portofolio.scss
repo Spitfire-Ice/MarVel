@@ -1,0 +1,92 @@
+.portfolio {
+  height: 958px;
+}
+
+.headline {
+  height: 332px;
+  background-color: #ffe400;
+  text-align: center;
+  position: relative;
+  h2 {
+    font-size: 91px;
+    font-family: 'montserratblack', sans-serif;
+    color: rgb(232, 209, 0);
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  h3 {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 155px;
+  }
+}
+.btn {
+  font-size: 13px;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+  line-height: 1.692;
+  background-color: transparent;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+.btn:focus {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(480px,1fr));
+  grid-template-rows: 311px;
+
+}
+
+.filterDiv {
+  height: 100%;
+  justify-self: center;
+  img {
+    width: 480px;
+    height: 311px;
+  }
+
+
+
+  //for filter working
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.gallery {
+  overflow: hidden;
+}
+.active {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+

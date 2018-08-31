@@ -1,0 +1,84 @@
+header {
+  height: 1155px;}
+
+.header__circle_right {
+  width: 757px;
+  height: 744px;
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+  right: 0; }
+.header__circle_right svg {
+  position: absolute;
+  right: -80px; }
+
+.header__circle_center {
+  position: absolute;
+  top: 805px;
+  right: 708px;
+}
+
+.header__man {
+  width: 100%;
+  height: 1155px;
+  position: relative; }
+.header__man img {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.header__carousel_wraper {
+  position: absolute;
+  top: 470px;
+  left: 370px;
+  width: 790px;
+  height: 355px;
+  //border: 2px solid green;
+}
+
+.carousel-cell {
+  width: 100%;
+  /* full width */
+  height: 355px;
+  /* height of carousel */ }
+.carousel-cell h2 {
+  font-family: 'montserratblack', sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: #444444;
+  font-weight: 900;
+  position: absolute;
+  top: 32px;
+  left: 26px; }
+.carousel-cell p {
+  font-family: 'Lato-Regular', sans-serif;
+  font-size: 13px;
+  color: #757575;
+  line-height: 1.846;
+  margin-top: 30px;
+  margin-left: 25px; }
+
+.Use__by_you_or_one_client__in_a_single_end_prod {
+  font-size: 13px;
+  font-family: "Lato";
+  color: #757575;
+  line-height: 1.846;
+  text-align: left;
+  position: absolute;
+  left: 387.99px;
+  top: 729.121px;
+  width: 766px;
+  height: 36px;
+  z-index: 608; }
+
+/* position dots up a bit */
+.flickity-page-dots {
+  bottom: -22px;
+  text-align: left; }
+
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0; }

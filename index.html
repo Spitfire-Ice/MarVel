@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/flickity.css">
+    <link rel="stylesheet" href="scss/style.css">
+
+
+</head>
+<body>
+<header id="header">
+    <div class="header__circle_right">
+        <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="757px" height="744px">
+            <path fill-rule="evenodd"  fill="rgb(255, 228, 0)"
+                  d="M530.995,536.206 C489.803,581.179 439.166,603.658 379.100,603.658 C319.018,603.658 268.397,581.179 227.205,536.206 C186.013,491.249 165.417,436.670 165.417,372.468 C165.417,308.283 186.013,253.527 227.205,208.216 C268.397,162.905 319.018,140.249 379.100,140.249 C439.166,140.249 489.803,162.905 530.995,208.216 C572.187,253.527 592.783,308.283 592.783,372.468 C592.783,436.670 572.187,491.249 530.995,536.206 ZM756.520,371.954 C756.520,266.238 720.123,177.837 647.362,106.781 C574.584,35.725 484.992,0.197 378.585,0.197 C272.162,0.197 182.570,35.725 109.808,106.781 C37.031,177.837 0.650,266.238 0.650,371.954 C0.650,477.685 37.031,566.070 109.808,637.126 C182.570,708.182 272.162,743.709 378.585,743.709 C484.992,743.709 574.584,708.182 647.362,637.126 C720.123,566.070 756.520,477.685 756.520,371.954 Z"/>
+        </svg>
+    </div>
+
+    <svg class="header__circle_center"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         width="198px" height="195px">
+        <image  x="0px" y="0px" width="198px" height="195px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADDCAMAAADuiJ7cAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAADAFBMVEX/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD/5AD///9EwRCpAAAA/nRSTlMAAxAeLDpMYXSGlaW0v8nQ1tnd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" />
+    </svg>
+
+    <div class="header__man">
+        <img src="./img/header_men.png" alt="">
+    </div>
+    <div class="header__carousel_wraper">
+        <div class="carousel">
+            <div class="carousel-cell">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="191px" height="191px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 228, 0)"
+                          d="M95.500,-0.000 C148.243,-0.000 191.000,42.757 191.000,95.500 C191.000,148.243 148.243,191.000 95.500,191.000 C42.757,191.000 0.000,148.243 0.000,95.500 C0.000,42.757 42.757,-0.000 95.500,-0.000 Z"/>
+                </svg>
+                <h2>Creative<br> and professional</h2>
+                <p>Use, by you or one client, in a single end product which end users are not charged for. Use, by you or one client, in a single end product which end users are not charged for.</p>
+            </div>
+            <div class="carousel-cell">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="191px" height="191px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 228, 0)"
+                          d="M95.500,-0.000 C148.243,-0.000 191.000,42.757 191.000,95.500 C191.000,148.243 148.243,191.000 95.500,191.000 C42.757,191.000 0.000,148.243 0.000,95.500 C0.000,42.757 42.757,-0.000 95.500,-0.000 Z"/>
+                </svg>
+                <h2>Creative<br> and professional</h2>
+                <p>Use, by you or one client, in a single end product which end users are not charged for. Use, by you or one client, in a single end product which end users are not charged for.</p>
+            </div>
+            <div class="carousel-cell">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="191px" height="191px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 228, 0)"
+                          d="M95.500,-0.000 C148.243,-0.000 191.000,42.757 191.000,95.500 C191.000,148.243 148.243,191.000 95.500,191.000 C42.757,191.000 0.000,148.243 0.000,95.500 C0.000,42.757 42.757,-0.000 95.500,-0.000 Z"/>
+                </svg>
+                <h2>Creative<br> and professional</h2>
+                <p>Use, by you or one client, in a single end product which end users are not charged for. Use, by you or one client, in a single end product which end users are not charged for.</p>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div id="menu">
+        <div class="main_menu">
+            <h1>Site Title</h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="about" id="about">
+        <h2>About</h2>
+        <div class="about__decoration-object">
+            <img src="./img/o-decor.png" alt="">
+        </div>
+        <div class="about__decoration-ipad">
+            <img src="./img/ipad.png" alt="">
+        </div>
+        <div class="about__decoration-lamp">
+            <img src="./img/light-lamp.png" alt="">
+        </div>
+        <div class="about__content-wraper">
+            <div class="about__content-block">
+                <h3>This is the one page polo</h3>
+                <p>Molestie ultricies quam. Donec at sem. Praesent pretium. Maorbi quis nulla vehicula felsd laoreet. Sed ullamcorper arcu ente. Sed tempus tempor cild  Nulla vierra ultrices magnal Nam rutrum congue diam.do eiusmod tempor incididunt ut dolore magna aliqua. Utdi eni ad minim veniam, quis nostrud exercitationconsequat. </p>
+            </div>
+            <div class="about__content-button-1">More info</div>
+            <div class="about__content-button-2">Join Experience</div>
+
+
+            <div class="skills skill-1">
+                <ion-icon ios="ios-star-half" md="md-star-half"></ion-icon>
+                <article>Responsive Design</article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore excepturi fugiat ipsam officia sapiente?</p>
+            </div>
+            <div class="skills skill-2">
+                <ion-icon ios="ios-globe" md="md-globe"></ion-icon>
+                <article>Awesome Features</article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore excepturi fugiat ipsam officia sapiente?</p>
+            </div>
+            <div class="skills skill-3">
+                <ion-icon ios="ios-lock" md="md-lock"></ion-icon>
+                <article>Powerful Security</article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore excepturi fugiat ipsam officia sapiente?</p>
+
+            </div>
+            <div class="numcount">
+                <h3>Here're some impressive numbers about us</h3>
+                <div class="numbers">
+                    <div class="static">
+                        <span class="spincrement">7533</span>
+                        <p>Project Complate</p>
+                    </div>
+                    <div class="static">
+                        <span class="spincrement">4232</span>
+                        <p>On Going Project</p>
+                    </div>
+                    <div class="static">
+                        <span class="spincrement">7533+</span>
+                        <p>Happy client</p>
+                    </div>
+                    <div class="static">
+                        <span class="spincrement">100%</span>
+                        <p>Positive Feedback</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arguments-data">
+                <h3>Boost your website</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etia fermentum vel libero eget interdum semper libero</p>
+                <ol>
+                    <li>★    Responsive Design & Retina Ready.</li>
+                    <li>★    Business Solution Any Company.</li>
+                    <li>★    Powerful Admin Panel.</li>
+                    <li>★    24/7 Support.</li>
+                </ol>
+                <div class="purchase">Purchase</div>
+            </div>
+            <div class="arguments_img">
+                <img src="./img/argument-img.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="service" id="service">
+        <div class="service__content_who-we-are">
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="561px" height="552px">
+                <path fill-rule="evenodd"  opacity="0.141" fill="rgb(255, 228, 0)"
+                      d="M393.623,397.942 C363.050,431.331 325.468,448.019 280.888,448.019 C236.295,448.019 198.725,431.331 168.153,397.942 C137.580,364.565 122.294,324.045 122.294,276.380 C122.294,228.728 137.580,188.076 168.153,154.436 C198.725,120.797 236.295,103.977 280.888,103.977 C325.468,103.977 363.050,120.797 393.623,154.436 C424.195,188.076 439.481,228.728 439.481,276.380 C439.481,324.045 424.195,364.565 393.623,397.942 ZM561.005,275.998 C561.005,197.514 533.992,131.882 479.989,79.129 C425.974,26.376 359.480,-0.000 280.506,-0.000 C201.519,-0.000 135.025,26.376 81.022,79.129 C27.007,131.882 0.006,197.514 0.006,275.998 C0.006,354.495 27.007,420.114 81.022,472.867 C135.025,525.620 201.519,551.996 280.506,551.996 C359.480,551.996 425.974,525.620 479.989,472.867 C533.992,420.114 561.005,354.495 561.005,275.998 Z"/>
+            </svg>
+            <img src="./img/logo.png" alt="">
+            <h3>Who we are</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer ux adipiscing elit, sed diam nonummy nibh and euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+            <div class="who-we-are_buttons">
+                <div class="who-we-are__button">More info</div>
+                <div class="who-we-are__button">Join Experience</div>
+            </div>
+        </div>
+        <article>We're creative crafting with love</article>
+        <div class="service__features">
+            <div class="feature">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="67px" height="66px">
+                    <path fill-rule="evenodd"  fill="rgb(115, 200, 183)"
+                          d="M33.037,0.013 C51.275,0.013 66.060,14.784 66.060,33.002 C66.060,51.223 51.275,65.991 33.037,65.991 C14.799,65.991 0.014,51.223 0.014,33.002 C0.014,14.784 14.799,0.013 33.037,0.013 Z"/>
+                    <text font-family="Ionicons" fill="rgb(255, 255, 255)" transform="matrix( 1.00102611253287, 0, 0, 1,24.7410215153374, 42)" font-size="28px">&#62552;</text>
+                </svg>
+                <h4>Powerful security</h4>
+                <p>Lorem ipsum dolor sicon adipiscing elit. Etiam antferme ntubero eget rorem interdum.</p>
+            </div>
+            <div class="feature">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="67px" height="67px">
+                    <path fill-rule="evenodd"  fill="rgb(49, 170, 226)"
+                          d="M33.972,0.982 C52.191,0.982 66.961,15.753 66.961,33.971 C66.961,52.190 52.191,66.961 33.972,66.961 C15.752,66.961 0.982,52.190 0.982,33.971 C0.982,15.753 15.752,0.982 33.972,0.982 Z"/>
+                    <text font-family="Ionicons" fill="rgb(255, 255, 255)" font-size="28px" x="25px" y="43.0619999999999px">&#62546;</text>
+                </svg>
+                <h4>Creative ideas</h4>
+                <p>Lorem ipsum dolor sicon adipiscing elit. Etiam antferme ntubero eget rorem interdum.</p>
+            </div>
+            <div class="feature">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="67px" height="67px">
+                    <path fill-rule="evenodd"  fill="rgb(193, 131, 214)"
+                          d="M33.972,0.982 C52.191,0.982 66.961,15.753 66.961,33.971 C66.961,52.190 52.191,66.961 33.972,66.961 C15.752,66.961 0.982,52.190 0.982,33.971 C0.982,15.753 15.752,0.982 33.972,0.982 Z"/>
+                    <text font-family="Ionicons" fill="rgb(255, 255, 255)" font-size="28px" x="23px" y="43.25px">&#62524;</text>
+                </svg>
+                <h4>Powerful admin panel</h4>
+                <p>Lorem ipsum dolor sicon adipiscing elit. Etiam antferme ntubero eget rorem interdum.</p>
+            </div>
+            <div class="feature">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="67px" height="66px">
+                    <path fill-rule="evenodd"  fill="rgb(235, 118, 140)"
+                          d="M33.037,0.012 C51.275,0.012 66.060,14.783 66.060,33.002 C66.060,51.223 51.275,65.990 33.037,65.990 C14.798,65.990 0.014,51.223 0.014,33.002 C0.014,14.783 14.798,0.012 33.037,0.012 Z"/>
+                    <text font-family="Ionicons" fill="rgb(255, 255, 255)" transform="matrix( 1.00102334390053, 0, 0, 1,25.9928365926963, 42.0079999999998)" font-size="28px">&#62561;</text>
+                </svg>
+                <h4>Gigh resolution theme</h4>
+                <p>Lorem ipsum dolor sicon adipiscing elit. Etiam antferme ntubero eget rorem interdum.</p>
+            </div>
+            <div class="feature">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="67px" height="67px">
+                    <path fill-rule="evenodd"  fill="rgb(115, 200, 183)"
+                          d="M33.972,0.981 C52.191,0.981 66.961,15.751 66.961,33.972 C66.961,52.191 52.191,66.960 33.972,66.960 C15.752,66.960 0.982,52.191 0.982,33.972 C0.982,15.751 15.752,0.981 33.972,0.981 Z"/>
+                    <text font-family="Ionicons" fill="rgb(255, 255, 255)" font-size="28px" x="21px" y="44px">&#62527;</text>
+                </svg>
+                <h4>Awesome interface</h4>
+                <p>Lorem ipsum dolor sicon adipiscing elit. Etiam antferme ntubero eget rorem interdum.</p>
+            </div>
+            <div class="feature">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="67px" height="67px">
+                    <path fill-rule="evenodd"  fill="rgb(49, 170, 226)"
+                          d="M33.972,0.981 C52.191,0.981 66.961,15.751 66.961,33.972 C66.961,52.191 52.191,66.960 33.972,66.960 C15.752,66.960 0.982,52.191 0.982,33.972 C0.982,15.751 15.752,0.981 33.972,0.981 Z"/>
+                    <text font-family="Ionicons" fill="rgb(255, 255, 255)" font-size="28px" x="25px" y="44.75px">&#62580;</text>
+                </svg>
+                <h4>untimade website builder</h4>
+                <p>Lorem ipsum dolor sicon adipiscing elit. Etiam antferme ntubero eget rorem interdum.</p>
+            </div>
+            <div class="feature">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="67px" height="66px">
+                    <path fill-rule="evenodd"  fill="rgb(235, 209, 117)"
+                          d="M33.037,0.013 C51.275,0.013 66.060,14.784 66.060,33.002 C66.060,51.223 51.275,65.990 33.037,65.990 C14.798,65.990 0.014,51.223 0.014,33.002 C0.014,14.784 14.798,0.013 33.037,0.013 Z"/>
+                    <text font-family="Ionicons" fill="rgb(255, 255, 255)" transform="matrix( 1.00102334390053, 0, 0, 1,18.9856731853926, 42)" font-size="28px">&#62352;</text>
+                </svg>
+                <h4>Responsive theme</h4>
+                <p>Lorem ipsum dolor sicon adipiscing elit. Etiam antferme ntubero eget rorem interdum.</p>
+            </div>
+            <div class="feature">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="67px" height="67px">
+                    <path fill-rule="evenodd"  fill="rgb(113, 138, 199)"
+                          d="M33.972,0.981 C52.191,0.981 66.961,15.751 66.961,33.972 C66.961,52.191 52.191,66.960 33.972,66.960 C15.752,66.960 0.982,52.191 0.982,33.972 C0.982,15.751 15.752,0.981 33.972,0.981 Z"/>
+                    <text font-family="Ionicons" fill="rgb(255, 255, 255)" font-size="28px" x="24px" y="44px">&#62361;</text>
+                </svg>
+                <h4>Costum content block</h4>
+                <p>Lorem ipsum dolor sicon adipiscing elit. Etiam antferme ntubero eget rorem interdum.</p>
+            </div>
+            <div class="feature">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="67px" height="67px">
+                    <path fill-rule="evenodd"  fill="rgb(75, 227, 164)"
+                          d="M33.972,0.981 C52.191,0.981 66.961,15.751 66.961,33.972 C66.961,52.191 52.191,66.960 33.972,66.960 C15.752,66.960 0.982,52.191 0.982,33.972 C0.982,15.751 15.752,0.981 33.972,0.981 Z"/>
+                    <text font-family="Ionicons" fill="rgb(255, 255, 255)" font-size="28px" x="23px" y="44px">&#62453;</text>
+                </svg>
+                <h4>Trendy design</h4>
+                <p>Lorem ipsum dolor sicon adipiscing elit. Etiam antferme ntubero eget rorem interdum.</p>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="headline">
+            <h2>Work</h2>
+            <h3> Our portfolio</h3>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="14px" height="13px">
+                        <text kerning="auto" font-family="Ionicons" fill="rgb(255, 255, 255)" font-size="21px" x="0px" y="14px">&#62300;</text>
+                    </svg>
+                </button>
+                <button class="btn" onclick="filterSelection('business')"> Business</button>
+                <button class="btn" onclick="filterSelection('corporate')"> Corporate</button>
+                <button class="btn" onclick="filterSelection('branding')"> Branding</button>
+                <button class="btn" onclick="filterSelection('photography')"> Photography</button>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="filterDiv business">
+                <img src="./img/gal001.png" alt="" height="311" width="480">
+            </div>
+            <div class="filterDiv business">
+                <img src="./img/gal002.png" alt="" height="311" width="480">
+            </div>
+            <div class="filterDiv business">
+                <img src="./img/gal003.png" alt="" height="311" width="480">
+            </div>
+            <div class="filterDiv business">
+                <img src="./img/gal004.png" alt="" height="311" width="480">
+            </div>
+            <div class="filterDiv business photography">
+                <img src="./img/gal005.png" alt="" height="311" width="480">
+            </div>
+            <div class="filterDiv branding">
+                <img src="./img/gal006.png" alt="" height="311" width="480">
+            </div>
+            <div class="filterDiv business photography">
+                <img src="./img/gal007.png" alt="" height="311" width="480">
+            </div>
+            <div class="filterDiv business">
+                <img src="./img/gal008.png" alt="" height="311" width="480">
+            </div>
+            <div class="filterDiv business">
+                <img src="./img/gal001.png" alt="" height="311" width="480">
+            </div>
+            <div class="filterDiv branding">
+                <img src="./img/gal002.png" alt="" height="311" width="480">
+            </div>
+            <div class="filterDiv business">
+                <img src="./img/gal003.png" alt="" height="311" width="480">
+            </div>
+            <div class="filterDiv business photography">
+                <img src="./img/gal004.png" alt="" height="311" width="480">
+            </div>
+            <div class="filterDiv branding">
+                <img src="./img/gal005.png" alt="" height="311" width="480">
+            </div>
+            <div class="filterDiv branding">
+                <img src="./img/gal006.png" alt="" height="311" width="480">
+            </div>
+            <div class="filterDiv business photography">
+                <img src="./img/gal007.png" alt="" height="311" width="480">
+            </div>
+            <div class="filterDiv business">
+                <img src="./img/gal008.png" alt="" height="311" width="480">
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+</main>
+<!--SCRIPTs-->
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/ionicons@4.4.1/dist/ionicons.js"></script>
+<script src="js/flickity.pkgd.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
