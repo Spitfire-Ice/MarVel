@@ -1,0 +1,131 @@
+.pricing {
+  width: 100%;
+  overflow: hidden;
+  background: url("../img/pricing_background.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  h2 {
+    font-size: 91px;
+    font-family: "montserratblack", sans-serif;
+    color: rgb(230, 209, 25);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    z-index: 2;
+  }
+  h3 {
+    position: relative;
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(1, 1, 1);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    width: 100%;
+    text-align: center;
+    margin-top: 155px;
+    z-index: 10;
+  }
+}
+
+.price-plan__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 142px;
+  margin-bottom: 108px;
+}
+.price-plan__item {
+  width: 360px;
+  height: 781px;
+  margin: auto 15px;
+}
+.price-plan__item-popular {
+  width: 360px;
+  height: 40px;
+  font-size: 15px;
+  font-family: "Muli",sans-serif;
+  color: rgb(68, 68, 68);
+  line-height: 1.6;
+  text-align: center;
+  background-color: #e6e6e6;
+  margin-bottom: 1px;
+}
+.price-plan__item-price {
+  width: 360px;
+  height: 212px;
+  background: url("../img/price_001.jpg")no-repeat center;
+  background-size: cover;
+  article {
+    font-size: 15px;
+    font-family: "Poppins",sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.6;
+    text-align: center;
+    padding-top: 30px;
+  }
+  p {
+    margin-top: 45px;
+    font-size: 60px;
+    font-family: "Muli",sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 0.4;
+    text-align: center;
+    sub {
+      font-size: 30px;
+      vertical-align: super;
+    }
+    sup {
+      font-size: 13px;
+    }
+  }
+  p:last-child {
+    font-size: 13px;
+    font-family: "Muli",sans-serif;
+    color: rgb(219, 219, 219);
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+.price-plan__item-base {
+  width: 360px;
+  height: 483px;
+  font-size: 13px;
+  font-family: "Muli",sans-serif;
+  color: rgb(128, 128, 128);
+  line-height: 4.615;
+  text-align: center;
+  background-color: #ffffff;
+  margin-bottom: 3px;
+}
+.price-plan__item-start {
+  width: 360px;
+  height: 44px;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-family: "Montserrat",sans-serif;
+  color: rgb(68, 68, 68);
+  line-height: 2.857;
+  text-align: center;
+  text-transform: capitalize;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
