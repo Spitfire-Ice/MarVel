@@ -872,4 +872,29 @@ header {
   text-align: center;
   text-transform: capitalize; }
 
+.our-team {
+  width: 100%;
+  overflow: hidden; }
+  .our-team h3 {
+    width: 100%;
+    font-size: 30px;
+    font-family: "Montserrat",sans-serif;
+    color: #444444;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 130px; }
+
+.our-team__teammates-wrapper {
+  border: 2px solid red;
+  width: 1170px;
+  margin: 0 auto; }
+
+.our-team__teammates {
+  border: 2px solid blueviolet;
+  width: 360px;
+  height: 542px; }
+
 /*# sourceMappingURL=style.css.map */
