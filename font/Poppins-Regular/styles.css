@@ -1,13 +1,11 @@
 
 @font-face {
-  font-family: 'Poppins-Regular';
+  font-family: 'Poppins';
   src: url('Poppins-Regular.eot') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Poppins-Regular';
+  font-family: 'Poppins';
   src:  url('Poppins-Regular.otf')  format('opentype'),
 	     url(data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAASzQAA8AAAACsSQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAEstAAAABoA
 AAAccyngDUdERUYAAQm8AAAAjAAAALA9Pzx5R1BPUwABHbwAAA71AAAiprp333pHU1VCAAEKSAAA
